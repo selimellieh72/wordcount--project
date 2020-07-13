@@ -1,0 +1,9 @@
+<h1> The given text is: </h1>
+<a href="{% url 'home'%}">Go Back</a>
+<br />
+{{text}}
+<h1>This text contain {{count}} words.</h1>
+{% for word,number in my_dictionary %}
+{{word}}:{{number}}
+<br />
+{% endfor %}
